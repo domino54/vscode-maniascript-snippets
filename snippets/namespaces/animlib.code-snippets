@@ -1,0 +1,146 @@
+{
+  "AnimLib::SmoothStep": {
+    "prefix": "AL::SmoothStep",
+    "body": "AL::SmoothStep(Real _X)"
+  },
+  "AnimLib::Ease": {
+    "prefix": "AL::Ease",
+    "body": "AL::Ease(\"${1|Linear,QuadIn,QuadOut,QuadInOut,CubicIn,CubicOut,CubicInOut,QuartIn,QuartOut,QuartInOut,QuintIn,QuintOut,QuintInOut,SineIn,SineOut,SineInOut,ExpIn,ExpOut,ExpInOut,CircIn,CircOut,CircInOut,BackIn,BackOut,BackInOut,ElasticIn,ElasticOut,ElasticInOut,ElasticIn2,ElasticOut2,ElasticInOut2,BounceIn,BounceOut,BounceInOut|}\", ${2:Time}, ${3:Value}, ${4:Delta}, ${5:Duration})"
+  },
+  "AnimLib::EaseLinear": {
+    "prefix": "AL::EaseLinear",
+    "body": "AL::EaseLinear(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInQuad": {
+    "prefix": "AL::EaseInQuad",
+    "body": "AL::EaseInQuad(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutQuad": {
+    "prefix": "AL::EaseOutQuad",
+    "body": "AL::EaseOutQuad(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutQuad": {
+    "prefix": "AL::EaseInOutQuad",
+    "body": "AL::EaseInOutQuad(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInCubic": {
+    "prefix": "AL::EaseInCubic",
+    "body": "AL::EaseInCubic(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutCubic": {
+    "prefix": "AL::EaseOutCubic",
+    "body": "AL::EaseOutCubic(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutCubic": {
+    "prefix": "AL::EaseInOutCubic",
+    "body": "AL::EaseInOutCubic(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInQuart": {
+    "prefix": "AL::EaseInQuart",
+    "body": "AL::EaseInQuart(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutQuart": {
+    "prefix": "AL::EaseOutQuart",
+    "body": "AL::EaseOutQuart(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutQuart": {
+    "prefix": "AL::EaseInOutQuart",
+    "body": "AL::EaseInOutQuart(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInQuint": {
+    "prefix": "AL::EaseInQuint",
+    "body": "AL::EaseInQuint(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutQuint": {
+    "prefix": "AL::EaseOutQuint",
+    "body": "AL::EaseOutQuint(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutQuint": {
+    "prefix": "AL::EaseInOutQuint",
+    "body": "AL::EaseInOutQuint(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInSine": {
+    "prefix": "AL::EaseInSine",
+    "body": "AL::EaseInSine(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutSine": {
+    "prefix": "AL::EaseOutSine",
+    "body": "AL::EaseOutSine(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutSine": {
+    "prefix": "AL::EaseInOutSine",
+    "body": "AL::EaseInOutSine(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInExp": {
+    "prefix": "AL::EaseInExp",
+    "body": "AL::EaseInExp(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutExp": {
+    "prefix": "AL::EaseOutExp",
+    "body": "AL::EaseOutExp(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutExp": {
+    "prefix": "AL::EaseInOutExp",
+    "body": "AL::EaseInOutExp(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInCirc": {
+    "prefix": "AL::EaseInCirc",
+    "body": "AL::EaseInCirc(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutCirc": {
+    "prefix": "AL::EaseOutCirc",
+    "body": "AL::EaseOutCirc(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutCirc": {
+    "prefix": "AL::EaseInOutCirc",
+    "body": "AL::EaseInOutCirc(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInBack": {
+    "prefix": "AL::EaseInBack",
+    "body": "AL::EaseInBack(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutBack": {
+    "prefix": "AL::EaseOutBack",
+    "body": "AL::EaseOutBack(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutBack": {
+    "prefix": "AL::EaseInOutBack",
+    "body": "AL::EaseInOutBack(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInElastic": {
+    "prefix": "AL::EaseInElastic",
+    "body": "AL::EaseInElastic(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutElastic": {
+    "prefix": "AL::EaseOutElastic",
+    "body": "AL::EaseOutElastic(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutElastic": {
+    "prefix": "AL::EaseInOutElastic",
+    "body": "AL::EaseInOutElastic(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInElastic2": {
+    "prefix": "AL::EaseInElastic2",
+    "body": "AL::EaseInElastic2(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutElastic2": {
+    "prefix": "AL::EaseOutElastic2",
+    "body": "AL::EaseOutElastic2(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutElastic2": {
+    "prefix": "AL::EaseInOutElastic2",
+    "body": "AL::EaseInOutElastic2(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInBounce": {
+    "prefix": "AL::EaseInBounce",
+    "body": "AL::EaseInBounce(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseOutBounce": {
+    "prefix": "AL::EaseOutBounce",
+    "body": "AL::EaseOutBounce(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+  "AnimLib::EaseInOutBounce": {
+    "prefix": "AL::EaseInOutBounce",
+    "body": "AL::EaseInOutBounce(${1:Time}, ${2:Value}, ${3:Delta}, ${4:Duration})"
+  },
+}

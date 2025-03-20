@@ -1,0 +1,54 @@
+{
+  "TimeLib::EDateFormats": {
+    "prefix": "TiL::EDateFormats::",
+    "body": "TiL::EDateFormats::${1|Full,Date,DateCompact,DateShort,Time,TimeShort,Relative,RelativeShort,MonthYear|}"
+  },
+  "TimeLib::DurationFormats": {
+    "prefix": "TiL::DurationFormats::",
+    "body": "TiL::DurationFormats::${1|Full,Abbreviated,Chrono|}"
+  },
+  "TimeLib::FormatDate": {
+    "prefix": "TiL::FormatDate",
+    "body": "TiL::FormatDate(${1:Timestamp}, TiL::EDateFormats::${2|Full,Date,DateCompact,DateShort,Time,TimeShort,Relative,RelativeShort,MonthYear|})",
+  },
+  "TimeLib::FormatDelta": {
+    "prefix": "TiL::FormatDelta",
+    "body": "TiL::FormatDelta(${1:Timestamp1}, ${2:Timestamp2}, TiL::DurationFormats::${3|Full,Abbreviated,Chrono|})",
+  },
+  "TimeLib::Compare": {
+    "prefix": "TiL::Compare",
+    "body": "TiL::Compare(${1:Timestamp1}, ${2:Timestamp2})",
+  },
+  "TimeLib::Clamp01": {
+    "prefix": "TiL::Clamp01",
+    "body": "TiL::Clamp01(${2:Min}, ${3:Max}, ${1:Timestamp})",
+  },
+  "TimeLib::Clamp01TZDay": {
+    "prefix": "TiL::Clamp01TZDay",
+    "body": "TiL::Clamp01TZDay(${1:Timestamp})",
+  },
+  "TimeLib::Clamp01UTCDay": {
+    "prefix": "TiL::Clamp01UTCDay",
+    "body": "TiL::Clamp01UTCDay(${1:Timestamp})",
+  },
+  "TimeLib::GetCurrent": {
+    "prefix": "TiL::GetCurrent",
+    "body": "TiL::GetCurrent()",
+  },
+  "TimeLib::GetDelta": {
+    "prefix": "TiL::GetDelta",
+    "body": "TiL::GetDelta(${1:Timestamp1}, ${2:Timestamp2})",
+  },
+  "TimeLib::GetLocalDelta_Years": {
+    "prefix": "TiL::GetLocalDelta_Years",
+    "body": "TiL::GetLocalDelta_Years(${1:Timestamp1}, ${2:Timestamp2})",
+  },
+  "TimeLib::GetLocalDelta_Months": {
+    "prefix": "TiL::GetLocalDelta_Months",
+    "body": "TiL::GetLocalDelta_Months(${1:Timestamp1}, ${2:Timestamp2})",
+  },
+  "TimeLib::GetMillisecondsSinceInit": {
+    "prefix": "TiL::GetMillisecondsSinceInit",
+    "body": "TiL::GetMillisecondsSinceInit()",
+  },
+}

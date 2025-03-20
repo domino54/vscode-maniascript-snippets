@@ -1,0 +1,76 @@
+{
+  "name": "vscode-maniascript-snippets",
+  "displayName": "ManiaScript Snippets",
+  "description": "Supercharged set of snippets for ManiaScript development.",
+  "icon": "images/logo.png",
+  "author": {
+    "name": "Dominik Mrajca"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domino54/vscode-maniascript-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/domino54/vscode-maniascript-snippets/issues"
+  },
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "snippets",
+    "maniascript",
+    "manialink",
+    "maniaplanet",
+    "trackmania",
+    "shootmania",
+    "questmania"
+  ],
+  "galleryBanner": {
+    "color": "#285a51",
+    "theme": "dark"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "maniascript",
+        "path": "./snippets/manialink.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/maniascript.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/namespaces/animlib.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/namespaces/colorlib.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/namespaces/mapunits.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/namespaces/mathlib.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/namespaces/textlib.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/namespaces/timelib.code-snippets"
+      },
+      {
+        "language": "maniascript",
+        "path": "./snippets/common-patterns.code-snippets"
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "Manialink Layer Template": {
+    "prefix": "manialink",
+    "body": [
+      "\"\"\"",
+      "<manialink version=\"3\" name=\"${1:Name}\">",
+      "$0",
+      "",
+      "<script><!--",
+      "",
+      "main() {",
+      "\t",
+      "}",
+      "",
+      "--></script>",
+      "</manialink>",
+      "\"\"\""
+    ]
+  },
+  "PendingEvents Loop with Switch Statement": {
+    "prefix": "PendingEvents",
+    "body": [
+      "foreach (Event in PendingEvents) {",
+      "\tswitch (Event.Type) {",
+      "\t\tcase ${1:CMlScriptEvent::Type::MouseClick}: {",
+      "\t\t\t$0",
+      "\t\t}",
+      "\t}",
+      "}"
+    ]
+  },
+  "Manialink Script Event Type": {
+    "prefix": "CMlScriptEvent::Type::",
+    "body": "CMlScriptEvent::Type::${1|MouseClick,MouseRightClick,MouseOver,MouseOut,KeyPress,EntrySubmit,MenuNavigation,PluginCustomEvent|}"
+  },
+  "Get and Cast a Manialink Page Control": {
+    "prefix": "Page.GetFirstChild",
+    "body": "declare ${1:ControlId} <=> (Page.GetFirstChild(\"${1:ControlId}\") as CMl${2|Control,Label,Quad,Frame,Gauge,Entry,FileEntry,TextArea,MediaPlayer,ColorPicker,Minimap,Graph,Camera|});"
+  },
+  "Get and Cast a Manialink Frame Control": {
+    "prefix": "Frame.GetFirstChild",
+    "body": "declare ${2:ControlId} <=> (${1:Frame}.GetFirstChild(\"${2:ControlId}\") as CMl${3|Control,Label,Quad,Frame,Gauge,Entry,FileEntry,TextArea,MediaPlayer,ColorPicker,Minimap,Graph,Camera|});"
+  },
+  "Get and Iterate over Class Children": {
+    "prefix": "Page.GetClassChildren",
+    "body": [
+      "Page.GetClassChildren(${1:ClassName}, ${2:Page.MainFrame}, ${3:True});",
+      "",
+      "foreach (${4:Control} in Page.GetClassChildren_Result) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Continue when Page is not Visible": {
+    "prefix": "pagenotvisible",
+    "body": [
+      "if (!PageIsVisible) {",
+      "\tcontinue;",
+      "}",
+      "$0"
+    ]
+  },
+  "Previous Value Check Statement": {
+    "prefix": "previsnot",
+    "body": [
+      "if (${2:PrevValueStore} != ${1:WatchedValue}) {",
+      "\t${2:PrevValueStore} = ${1:WatchedValue};",
+      "\t",
+      "\t$0",
+      "}"
+    ]
+  },
+  "UIManager.GetUI": {
+    "prefix": "UIManager.GetUI",
+    "body": "declare ${2:UI} <=> UIManager.GetUI(${1:Player});"
+  },
+  "Today YYYY-MM-DD": {
+    "prefix": "Today YYYY-MM-DD",
+    "body": "${CURRENT_YEAR:YYYY}-${CURRENT_MONTH:MM}-${CURRENT_DATE:DD}"
+  },
+  "Library Name Prefix": {
+    "prefix": "Lib",
+    "body": "Lib${TM_FILENAME_BASE/(.*)\\..+$/$1/}_"
+  },
+  "Play Sound Event": {
+    "prefix": "Audio.PlaySoundEvent",
+    "body": "Audio.PlaySoundEvent(CAudioManager::ELibSound::${1|Alert,ShowDialog,HideDialog,ShowMenu,HideMenu,Focus,Valid,Start,Countdown,Victory,ScoreIncrease,Checkpoint|}, ${2:0}, ${3:0.0});"
+  },
+  "Flush Control Animations": {
+    "prefix": "AnimMgr.Flush",
+    "body": "AnimMgr.Flush(${1:Control});"
+  },
+  "Add a Control Animation": {
+    "prefix": "AnimMgr.Add",
+    "body": "AnimMgr.Add(${1:Control}, \"<control ${2:prop}='${3:value}' />\", ${4:Duration}, CAnimManager::EAnimManagerEasing::${5|Linear,QuadIn,QuadOut,QuadInOut,CubicIn,CubicOut,CubicInOut,QuartIn,QuartOut,QuartInOut,QuintIn,QuintOut,QuintInOut,SineIn,SineOut,SineInOut,ExpIn,ExpOut,ExpInOut,CircIn,CircOut,CircInOut,BackIn,BackOut,BackInOut,ElasticIn,ElasticOut,ElasticInOut,ElasticIn2,ElasticOut2,ElasticInOut2,BounceIn,BounceOut,BounceInOut|});"
+  },
+  "Chain a Control Animation": {
+    "prefix": "AnimMgr.AddChain",
+    "body": "AnimMgr.AddChain(${1:Control}, \"<control ${2:prop}='${3:value}' />\", ${4:Duration}, CAnimManager::EAnimManagerEasing::${5|Linear,QuadIn,QuadOut,QuadInOut,CubicIn,CubicOut,CubicInOut,QuartIn,QuartOut,QuartInOut,QuintIn,QuintOut,QuintInOut,SineIn,SineOut,SineInOut,ExpIn,ExpOut,ExpInOut,CircIn,CircOut,CircInOut,BackIn,BackOut,BackInOut,ElasticIn,ElasticOut,ElasticInOut,ElasticIn2,ElasticOut2,ElasticInOut2,BounceIn,BounceOut,BounceInOut|});"
+  },
+  "Compute Label Width": {
+    "prefix": "Label.ComputeWidth",
+    "body": "${1:Label}.ComputeWidth(${1:Label}.Value)"
+  },
+  "Compute Label Height": {
+    "prefix": "Label.ComputeHeight",
+    "body": "${1:Label}.ComputeHeight(${1:Label}.Value)"
+  },
+  "Http.IsValidUrl": {
+    "prefix": "Http.IsValidUrl",
+    "body": "Http.IsValidUrl(${1:Url})"
+  },
+  "Load-Unload Library Function Pair": {
+    "prefix": "UnloadLoad",
+    "body": [
+      "Void Unload() {",
+      "\t//",
+      "}",
+      "",
+      "Void Load($1) {",
+      "\tUnload();",
+      "",
+      "\t$0",
+      "}"
+    ]
+  },
+}

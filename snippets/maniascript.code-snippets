@@ -1,0 +1,398 @@
+{
+  "Log to the console": {
+    "prefix": "log",
+    "body": [
+      "log(${1:Value});"
+    ]
+  },
+  "Dump": {
+    "prefix": "dump",
+    "body": "dump(${1:Value})"
+  },
+  "Dump-Type": {
+    "prefix": "dumptype",
+    "body": "dumptype(${1:Value})"
+  },
+  "Sleep": {
+    "prefix": "sleep",
+    "body": "sleep(${1:Duration});"
+  },
+  "Wait": {
+    "prefix": "wait",
+    "body": "wait(${1:Condition});"
+  },
+  "Assert": {
+    "prefix": "assert",
+    "body": "assert(${1:Condition}, \"${2:Exception Message}\");"
+  },
+  "Assert False": {
+    "prefix": "assertfalse",
+    "body": "assert(False, \"${1:Exception Message}\");"
+  },
+  "Return Value": {
+    "prefix": "return",
+    "body": "return ${1:Value};"
+  },
+  "Cast": {
+    "prefix": "cast",
+    "body": "cast(${2:Type}, ${1:Value})"
+  },
+  "As Cast": {
+    "prefix": "as",
+    "body": "(${1:Value} as ${2:Type})"
+  },
+  "Label": {
+    "prefix": "***Label***",
+    "body": [
+      "***${1:Name}***",
+      "***",
+      "$TM_SELECTED_TEXT$0",
+      "***"
+    ]
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if (${1:Condition}) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "If-Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:Condition}) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "} else {",
+      "\t",
+      "}"
+    ]
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condition}) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "While-True Infinite Loop": {
+    "prefix": "whiletrue",
+    "body": [
+      "while (True) {",
+      "\tyield;",
+      "",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (${1:I}, ${2:Start}, ${3:End}) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "For-Each Loop": {
+    "prefix": "foreach",
+    "body": [
+      "foreach (${2:Element} in ${1:Array}) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "For-Each Loop with index value": {
+    "prefix": "foreach =>",
+    "body": [
+      "foreach (${3:Index} => ${2:Element} in ${1:Array}) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "For-Reverse Loop": {
+    "prefix": "forreverse",
+    "body": [
+      "for (${2:I}, 1, ${1:Array}.count) {",
+      "\tdeclare ${3:Element} = ${1:Array}[${1:Array}.count - ${2:I}];",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "Switch Statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:Key}) {",
+      "\tcase ${2:Value}: {",
+      "\t\t$0",
+      "\t}",
+      "\tdefault: {",
+      "\t\t",
+      "\t}",
+      "}"
+    ]
+  },
+  "Switch-Type Statement": {
+    "prefix": "switchtype",
+    "body": [
+      "switchtype (${1:Key}) {",
+      "\tcase ${2:Type}: {",
+      "\t\t$0",
+      "\t}",
+      "\tdefault: {",
+      "\t\t",
+      "\t}",
+      "}"
+    ]
+  },
+  "Switch Case Statement": {
+    "prefix": "case",
+    "body": [
+      "case ${1:Value}: {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Switch Default Statement": {
+    "prefix": "default",
+    "body": [
+      "default: {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Main Function Statement": {
+    "prefix": "main",
+    "body": [
+      "main() {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Function Statement": {
+    "prefix": "function",
+    "body": [
+      "${3:Void} ${1:Name}($2) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "Private Function Statement": {
+    "prefix": "function Private_",
+    "body": [
+      "${3:Void} Private_${1:Name}($2) {",
+      "\t$TM_SELECTED_TEXT$0",
+      "}"
+    ]
+  },
+  "Function Parameter": {
+    "prefix": "_",
+    "body": "${2:Type} _${1:Name}"
+  },
+  "Array Add": {
+    "prefix": ".add",
+    "body": ".add(${1:Value})"
+  },
+  "Array Add-First": {
+    "prefix": ".addfirst",
+    "body": ".addfirst(${1:Value})"
+  },
+  "Array Clear": {
+    "prefix": ".clear",
+    "body": ".clear()"
+  },
+  "Array Count": {
+    "prefix": ".count",
+    "body": ".count"
+  },
+  "Array Contains-One-Of": {
+    "prefix": ".containsoneof",
+    "body": ".containsoneof(${1:Values})"
+  },
+  "Array Contains-Only": {
+    "prefix": ".containsonly",
+    "body": ".containsonly(${1:Values})"
+  },
+  "Array Exists": {
+    "prefix": ".exists",
+    "body": ".exists(${1:Value})"
+  },
+  "Array Get": {
+    "prefix": ".get",
+    "body": ".get(${1:Key}, ${2:Fallback})"
+  },
+  "Array Remove": {
+    "prefix": ".remove",
+    "body": ".remove(${1:Value})"
+  },
+  "Array Sort": {
+    "prefix": ".sort",
+    "body": ".sort()"
+  },
+  "Array Sort-Reverse": {
+    "prefix": ".sortreverse",
+    "body": ".sortreverse()"
+  },
+  "Array Exists-Key": {
+    "prefix": ".existskey",
+    "body": ".existskey(${1:Key})"
+  },
+  "Array Key-Of": {
+    "prefix": ".keyof",
+    "body": ".keyof(${1:Value})"
+  },
+  "Array Remove-Key": {
+    "prefix": ".removekey",
+    "body": ".removekey(${1:Key})"
+  },
+  "Array Sort-Key": {
+    "prefix": ".sortkey",
+    "body": ".sortkey()"
+  },
+  "Array Sort-Key-Reverse": {
+    "prefix": ".sortkeyreverse",
+    "body": ".sortkeyreverse()"
+  },
+  "Parse Struct from JSON": {
+    "prefix": ".fromjson",
+    "body": ".fromjson(${1:Text})"
+  },
+  "Serialize Struct to JSON": {
+    "prefix": ".tojson",
+    "body": ".tojson()"
+  },
+  "Let Variable Declaration": {
+    "prefix": "let",
+    "body": "let ${1:Name} = ${2:Value};"
+  },
+  "Variable Declaration": {
+    "prefix": "declare",
+    "body": "declare ${1:Name} = ${2:Value};"
+  },
+  "Typed Variable Declaration": {
+    "prefix": "declaretype",
+    "body": "declare ${1:Type} ${2:Name};"
+  },
+  "Initialized Typed Variable Declaration": {
+    "prefix": "declareinit",
+    "body": "declare ${1:Type} ${2:Name} = ${3:Value};"
+  },
+  "Trait Declaration": {
+    "prefix": "declarefor",
+    "body": "declare ${1|netread,netwrite,metadata,persistent,cloud|} ${3:Type} ${2:Name} for ${4:Target};"
+  },
+  "Network-Read Trait Declaration": {
+    "prefix": "declare netread",
+    "body": "declare netread ${2:Type} Net_${1:Name} for ${3|UI,Teams[0],Player,Score|};"
+  },
+  "Network-Write Trait Declaration": {
+    "prefix": "declare netwrite",
+    "body": "declare netwrite ${2:Type} Net_${1:Name} for ${3|UI,Teams[0],Player,Score|};"
+  },
+  "Persistent Trait Declaration": {
+    "prefix": "declare persistent",
+    "body": "declare persistent ${2:Type} ${1:Name} for ${3|LocalUser,This,Page,LoadedTitle,Map,Playground|};"
+  },
+  "Metadata Trait Declaration": {
+    "prefix": "declare metadata",
+    "body": "declare metadata ${2:Type} ${1:Name} for ${3:Map};"
+  },
+  "RequireContext Directive": {
+    "prefix": "#RequireContext",
+    "body": "#RequireContext $0"
+  },
+  "Extends Directive": {
+    "prefix": "#Extends",
+    "body": "#Extends \"${1:Path/To/Library.Script.txt}\""
+  },
+  "Setting Directive": {
+    "prefix": "#Setting S_",
+    "body": "#Setting S_${1:Name} ${2:Value} as \"${3:Display name}\""
+  },
+  "Hidden Setting Directive": {
+    "prefix": "#Setting S_ <hidden>",
+    "body": "#Setting S_${1:Name} ${2:Value} as \"<hidden>\""
+  },
+  "Command Directive": {
+    "prefix": "#Command Command_",
+    "body": "#Command Command_${1:Name} (${2:Type}) as \"${3:Display name}\""
+  },
+  "Hidden Command Directive": {
+    "prefix": "#Command Command_ <hidden>",
+    "body": "#Command Command_${1:Name} (${2:Type}) as \"<hidden>\""
+  },
+  "Include-As Directive": {
+    "prefix": "#Include as",
+    "body": "#Include \"${1:Path/To/Library.Script.txt}\" as ${2:Alias}"
+  },
+  "Include MathLib Directive": {
+    "prefix": "#Include MathLib",
+    "body": "#Include \"MathLib\" as ML"
+  },
+  "Include TextLib Directive": {
+    "prefix": "#Include TextLib",
+    "body": "#Include \"TextLib\" as TL"
+  },
+  "Include MapUnits Directive": {
+    "prefix": "#Include MapUnits",
+    "body": "#Include \"MapUnits\" as MU"
+  },
+  "Include AnimLib Directive": {
+    "prefix": "#Include AnimLib",
+    "body": "#Include \"AnimLib\" as AL"
+  },
+  "Include TimeLib Directive": {
+    "prefix": "#Include TimeLib",
+    "body": "#Include \"TimeLib\" as TiL"
+  },
+  "Include ColorLib Directive": {
+    "prefix": "#Include ColorLib",
+    "body": "#Include \"ColorLib\" as CL"
+  },
+  "Constant Directive": {
+    "prefix": "#Const C_",
+    "body": "#Const C_${1:Name} ${0:Value}"
+  },
+  "ScriptName Constant Directive": {
+    "prefix": "#Const ScriptName",
+    "body": "#Const ScriptName \"${RELATIVE_FILEPATH/(\\\\)/\\//g}\""
+  },
+  "DebugName Constant Directive": {
+    "prefix": "#Const DebugName",
+    "body": "#Const DebugName \"$1\""
+  },
+  "Description Constant Directive": {
+    "prefix": "#Const Description",
+    "body": "#Const Description \"$1\""
+  },
+  "CompatibleMapTypes Constant Directive": {
+    "prefix": "#Const CompatibleMapTypes",
+    "body": "#Const CompatibleMapTypes [\"${1:Race}\"]"
+  },
+  "CustomMusicFolder Constant Directive": {
+    "prefix": "#Const CustomMusicFolder",
+    "body": "#Const CustomMusicFolder \"${1:Path/To/Music}\""
+  },
+  "SemVer Version Constant Directive": {
+    "prefix": "#Const Version SemVer",
+    "body": "#Const Version \"${1:0}.${2:0}.${3:0}\"",
+    "description": "Version constant with the current date."
+  },
+  "Date Version Constant Directive": {
+    "prefix": "#Const Version Date",
+    "body": "#Const Version \"${CURRENT_YEAR:YYYY}-${CURRENT_MONTH:MM}-${CURRENT_DATE:DD}\"",
+    "description": "Version constant with the current date."
+  },
+  "Struct Directive": {
+    "prefix": "#Struct K_",
+    "body": [
+      "#Struct K_${1:Name} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Struct-As Directive": {
+    "prefix": "#Struct as",
+    "body": "#Struct ${1:Namespace}::K_${2:Name} as K_${2:Name}"
+  },
+}

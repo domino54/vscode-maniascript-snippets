@@ -1,0 +1,118 @@
+{
+  "TextLib::ToReal": {
+    "prefix": "TL::ToReal",
+    "body": "TL::ToReal(${1:Text})"
+  },
+  "TextLib::ToInteger": {
+    "prefix": "TL::ToInteger",
+    "body": "TL::ToInteger(${1:Text})"
+  },
+  "TextLib::ToColor": {
+    "prefix": "TL::ToColor",
+    "body": "TL::ToColor(${1:Text})"
+  },
+  "TextLib::SubString": {
+    "prefix": "TL::SubString",
+    "body": "TL::SubString(${1:Text}, ${2:Start}, ${3:Length})"
+  },
+  "TextLib::Length": {
+    "prefix": "TL::Length",
+    "body": "TL::Length(${1:Text})"
+  },
+  "TextLib::ToText": {
+    "prefix": "TL::ToText",
+    "body": "TL::ToText(${1:Value})"
+  },
+  "TextLib::TimeToText": {
+    "prefix": "TL::TimeToText",
+    "body": "TL::TimeToText(${1:Time}, ${2|True,False|}, ${3|True,False|})"
+  },
+  "TextLib::FormatInteger": {
+    "prefix": "TL::FormatInteger",
+    "body": "TL::FormatInteger(${1:Integer}, ${1:LeadingZerosCount})"
+  },
+  "TextLib::FormatRank": {
+    "prefix": "TL::FormatRank",
+    "body": "TL::FormatRank(${1:Integer}, ${3|False,True|})"
+  },
+  "TextLib::FormatReal": {
+    "prefix": "TL::FormatReal",
+    "body": "TL::FormatReal(${1:Value}, ${2:DecimalPlacesCount}, ${3|False,True|}, ${4|False,True|})"
+  },
+  "TextLib::ToUpperCase": {
+    "prefix": "TL::ToUpperCase",
+    "body": "TL::ToUpperCase(${1:Text})"
+  },
+  "TextLib::ToLowerCase": {
+    "prefix": "TL::ToLowerCase",
+    "body": "TL::ToLowerCase(${1:Text})"
+  },
+  "TextLib::CloseStyleTags": {
+    "prefix": "TL::CloseStyleTags",
+    "body": "TL::CloseStyleTags(${1:Text})"
+  },
+  "TextLib::CompareWithoutFormat": {
+    "prefix": "TL::CompareWithoutFormat",
+    "body": "TL::CompareWithoutFormat(${1:Left}, ${2:Right}, ${3|False,True|})"
+  },
+  "TextLib::Find": {
+    "prefix": "TL::Find",
+    "body": "TL::Find(${2:SearchValue}, ${1:Text}, ${3|False,True|}, ${4|False,True|})"
+  },
+  "TextLib::EndsWith": {
+    "prefix": "TL::EndsWith",
+    "body": "TL::EndsWith(${2:SearchValue}, ${1:Text})"
+  },
+  "TextLib::StartsWith": {
+    "prefix": "TL::StartsWith",
+    "body": "TL::StartsWith(${2:SearchValue}, ${1:Text})"
+  },
+  "TextLib::Compose": {
+    "prefix": "TL::Compose",
+    "body": "TL::Compose(${1:Base}, ${2:Argument})"
+  },
+  "TextLib::MLEncode": {
+    "prefix": "TL::MLEncode",
+    "body": "TL::MLEncode(${1:Text})"
+  },
+  "TextLib::URLEncode": {
+    "prefix": "TL::URLEncode",
+    "body": "TL::URLEncode(${1:Text})"
+  },
+  "TextLib::StripFormatting": {
+    "prefix": "TL::StripFormatting",
+    "body": "TL::StripFormatting(${1:Text})"
+  },
+  "TextLib::Split": {
+    "prefix": "TL::Split",
+    "body": "TL::Split(\"${2:,}\", ${1:Text})"
+  },
+  "TextLib::Join": {
+    "prefix": "TL::Join",
+    "body": "TL::Join(\"${2:,}\", ${1:Array})"
+  },
+  "TextLib::Trim": {
+    "prefix": "TL::Trim",
+    "body": "TL::Trim(${1:Text})"
+  },
+  "TextLib::Replace": {
+    "prefix": "TL::Replace",
+    "body": "TL::Replace(${1:Text}, ${2:SearchValue}, ${3:Replacement})"
+  },
+  "TextLib::RegexFind": {
+    "prefix": "TL::RegexFind",
+    "body": "TL::RegexFind(\"${2:Pattern}\", ${1:Text}, \"${3|g,gi,gm,gim,i,im,m|}\")"
+  },
+  "TextLib::RegexMatch": {
+    "prefix": "TL::RegexMatch",
+    "body": "TL::RegexMatch(\"${2:Pattern}\", ${1:Text}, \"${3|i,im,m|}\")"
+  },
+  "TextLib::RegexReplace": {
+    "prefix": "TL::RegexReplace",
+    "body": "TL::RegexReplace(\"${2:Pattern}\", ${1:Text}, \"${3|g,gi,gm,gim,i,im,m|}\", ${4:Replacement})"
+  },
+  "TextLib::GetTranslatedText": {
+    "prefix": "TL::GetTranslatedText",
+    "body": "TL::GetTranslatedText(${1:Text})"
+  },
+}

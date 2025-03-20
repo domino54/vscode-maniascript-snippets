@@ -1,0 +1,38 @@
+{
+  "CMapEditorPlugin::CardinalDirections": {
+    "prefix": "CMapEditorPlugin::CardinalDirections::",
+    "body": "CMapEditorPlugin::CardinalDirections::${1|North,East,South,West|}"
+  },
+  "MapUnits::GetNextDir": {
+    "prefix": "MU::GetNextDir",
+    "body": "MU::GetNextDir(${1:Direction})"
+  },
+  "MapUnits::GetPreviousDir": {
+    "prefix": "MU::GetPreviousDir",
+    "body": "MU::GetPreviousDir(${1:Direction})"
+  },
+  "MapUnits::GetOpposedDir": {
+    "prefix": "MU::GetOpposedDir",
+    "body": "MU::GetOpposedDir(${1:Direction})"
+  },
+  "MapUnits::AddDirs": {
+    "prefix": "MU::AddDirs",
+    "body": "MU::AddDirs(${1:Direction1}, ${2:Direction2})"
+  },
+  "MapUnits::SubDirs": {
+    "prefix": "MU::SubDirs",
+    "body": "MU::SubDirs(${1:Direction1}, ${2:Direction2})"
+  },
+  "MapUnits::GetNeighbourCoord": {
+    "prefix": "MU::GetNeighbourCoord",
+    "body": "MU::GetNeighbourCoord(${1:Int3}, ${2:Direction})"
+  },
+  "MapUnits::GetRotatedOffset": {
+    "prefix": "MU::GetRotatedOffset",
+    "body": "MU::GetRotatedOffset(${1:Int3}, ${2:Direction})"
+  },
+  "MapUnits::GetRotatedOffsetPositive": {
+    "prefix": "MU::GetRotatedOffsetPositive",
+    "body": "MU::GetRotatedOffsetPositive(${1:Int3}, ${2:Direction}, ${3:Int3})"
+  },
+}

@@ -1,0 +1,42 @@
+{
+  "Manialink Label": {
+    "prefix": "ml>label",
+    "body": "<label id=\"Label_${1:Name}\" $2 />"
+  },
+  "Manialink Quad": {
+    "prefix": "ml>quad",
+    "body": "<quad id=\"Quad_${1:Name}\" $2 />"
+  },
+  "Manialink Entry": {
+    "prefix": "ml>entry",
+    "body": "<entry id=\"Entry_${1:Name}\" default=\"\" scriptevents=\"1\" $2 />"
+  },
+  "Manialink File-Entry": {
+    "prefix": "ml>entry",
+    "body": "<fileentry id=\"Entry_${1:Name}\" scriptevents=\"1\" $2 />"
+  },
+  "Manialink Frame": {
+    "prefix": "ml>frame",
+    "body": [
+      "<frame id=\"Frame_${1:Name}\">",
+      "\t$TM_SELECTED_TEXT$0",
+      "</frame>"
+    ]
+  },
+  "Manialink Frame-Model": {
+    "prefix": "ml>framemodel",
+    "body": [
+      "<framemodel id=\"FrameModel_${1:Name}\">",
+      "\t$TM_SELECTED_TEXT$0",
+      "</framemodel>"
+    ]
+  },
+  "Manialink Frame-Instance": {
+    "prefix": "ml>frameinstance",
+    "body": "<frameinstance modelid=\"FrameModel_${1:Name}\" id=\"Frame_${2:Name}\" $0 />"
+  },
+  "Enable Script Events": {
+    "prefix": "ml>scriptevents",
+    "body": "scriptevents=\"1\""
+  },
+}

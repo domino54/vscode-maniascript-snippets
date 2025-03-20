@@ -1,0 +1,142 @@
+{
+  "MathLib::Pi Constant": {
+    "prefix": "pi",
+    "body": "ML::Pi"
+  },
+  "MathLib::Tau Constant": {
+    "prefix": "tau",
+    "body": "ML::Tau"
+  },
+  "MathLib::Abs": {
+    "prefix": "ML::Abs",
+    "body": "ML::Abs(${1:Value})"
+  },
+  "MathLib::ToReal": {
+    "prefix": "ML::ToReal",
+    "body": "ML::ToReal(${1:Integer})"
+  },
+  "MathLib::DegToRad": {
+    "prefix": "ML::DegToRad",
+    "body": "ML::DegToRad(${1:Degrees})"
+  },
+  "MathLib::RadToDeg": {
+    "prefix": "ML::RadToDeg",
+    "body": "ML::RadToDeg(${1:Radians})"
+  },
+  "MathLib::Sin": {
+    "prefix": "ML::Sin",
+    "body": "ML::Sin(${1:Real})"
+  },
+  "MathLib::Cos": {
+    "prefix": "ML::Cos",
+    "body": "ML::Cos(${1:Real})"
+  },
+  "MathLib::Tan": {
+    "prefix": "ML::Tan",
+    "body": "ML::Tan(${1:Real})"
+  },
+  "MathLib::Atan2": {
+    "prefix": "ML::Atan2",
+    "body": "ML::Atan2(${1:X}, ${2:Y})"
+  },
+  "MathLib::Exp": {
+    "prefix": "ML::Exp",
+    "body": "ML::Exp(${1:Real})"
+  },
+  "MathLib::Rand": {
+    "prefix": "ML::Rand",
+    "body": "ML::Rand(${1:MinInclusive}, ${2:MaxInclusive})"
+  },
+  "MathLib::NearestReal": {
+    "prefix": "ML::NearestReal",
+    "body": "ML::NearestReal(${1:Integer})"
+  },
+  "MathLib::NearestInteger": {
+    "prefix": "ML::NearestInteger",
+    "body": "ML::NearestInteger(${1:Real})"
+  },
+  "MathLib::FloorInteger": {
+    "prefix": "ML::FloorInteger",
+    "body": "ML::FloorInteger(${1:Real})"
+  },
+  "MathLib::TruncInteger": {
+    "prefix": "ML::TruncInteger",
+    "body": "ML::TruncInteger(${1:Real})"
+  },
+  "MathLib::CeilingInteger": {
+    "prefix": "ML::CeilingInteger",
+    "body": "ML::CeilingInteger(${1:Real})"
+  },
+  "MathLib::Distance": {
+    "prefix": "ML::Distance",
+    "body": "ML::Distance(${1:Vector1}, ${2:Vector2})"
+  },
+  "MathLib::Length": {
+    "prefix": "ML::Length",
+    "body": "ML::Length(${1:Value})"
+  },
+  "MathLib::Norm0": {
+    "prefix": "ML::Norm0",
+    "body": "ML::Norm0(${1:Value})"
+  },
+  "MathLib::Norm1": {
+    "prefix": "ML::Norm1",
+    "body": "ML::Norm1(${1:Value})"
+  },
+  "MathLib::DotProduct": {
+    "prefix": "ML::DotProduct",
+    "body": "ML::DotProduct(${1:Vector1}, ${2:Vector2})"
+  },
+  "MathLib::CrossProduct": {
+    "prefix": "ML::CrossProduct",
+    "body": "ML::CrossProduct(${1:Vector1}, ${2:Vector2})"
+  },
+  "MathLib::Angle": {
+    "prefix": "ML::Angle",
+    "body": "ML::Angle(${1:Vector1}, ${2:Vector2})"
+  },
+  "MathLib::OrientedAngle": {
+    "prefix": "ML::OrientedAngle",
+    "body": "ML::OrientedAngle(${1:Vector1}, ${2:Vector2})"
+  },
+  "MathLib::PI": {
+    "prefix": "ML::PI",
+    "body": "ML::PI()"
+  },
+  "MathLib::Asin": {
+    "prefix": "ML::Asin",
+    "body": "ML::Asin(${1:Real})"
+  },
+  "MathLib::Acos": {
+    "prefix": "ML::Acos",
+    "body": "ML::Acos(${1:Real})"
+  },
+  "MathLib::Pow": {
+    "prefix": "ML::Pow",
+    "body": "ML::Pow(${1:Real}, ${2:Exponent})"
+  },
+  "MathLib::Ln": {
+    "prefix": "ML::Ln",
+    "body": "ML::Ln(${1:Real})"
+  },
+  "MathLib::Sqrt": {
+    "prefix": "ML::Sqrt",
+    "body": "ML::Sqrt(${1:Real})"
+  },
+  "MathLib::Max": {
+    "prefix": "ML::Max",
+    "body": "ML::Max(${1:ValueOrVector1}, ${2:ValueOrVector2})"
+  },
+  "MathLib::Min": {
+    "prefix": "ML::Min",
+    "body": "ML::Min(${1:ValueOrVector1}, ${2:ValueOrVector2})"
+  },
+  "MathLib::Clamp": {
+    "prefix": "ML::Clamp",
+    "body": "ML::Clamp(${1:ValueOrVector}, ${2:Min}, ${3:Max})"
+  },
+  "MathLib::Mod": {
+    "prefix": "ML::Mod",
+    "body": "ML::Mod(${1:Real}, ${2:Min}, ${3:Max})"
+  },
+}

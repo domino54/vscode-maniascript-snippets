@@ -1,0 +1,30 @@
+{
+  "ColorLib::HsvToRgb": {
+    "prefix": "CL::HsvToRgb",
+    "body": "CL::HsvToRgb(${1:Vec3})"
+  },
+  "ColorLib::RgbToHsv": {
+    "prefix": "CL::RgbToHsv",
+    "body": "CL::RgbToHsv(${1:Vec3})"
+  },
+  "ColorLib::RgbToHex3": {
+    "prefix": "CL::RgbToHex3",
+    "body": "CL::RgbToHex3(${1:Vec3})"
+  },
+  "ColorLib::RgbToHex6": {
+    "prefix": "CL::RgbToHex6",
+    "body": "CL::RgbToHex6(${1:Vec3})"
+  },
+  "ColorLib::Hex3ToRgb": {
+    "prefix": "CL::Hex3ToRgb",
+    "body": "CL::Hex3ToRgb(${1:Text})"
+  },
+  "ColorLib::Hex6ToRgb": {
+    "prefix": "CL::Hex6ToRgb",
+    "body": "CL::Hex6ToRgb(${1:Text})"
+  },
+  "ColorLib::HexToRgb": {
+    "prefix": "CL::HexToRgb",
+    "body": "CL::HexToRgb(${1:Text})"
+  },
+}
