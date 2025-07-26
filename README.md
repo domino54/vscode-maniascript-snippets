@@ -1,11 +1,11 @@
-# [ManiaScript Snippets](https://marketplace.visualstudio.com/items?itemName=domino54.vscode-maniascript-snippets)
+# [ManiaScript Snippets Collection](https://marketplace.visualstudio.com/items?itemName=domino54.vscode-maniascript-snippets)
 
-This [VS Code](https://code.visualstudio.com/) extension adds over 200 snippets for ManiaScript, a scripting language used in the racing game [Trackmania (2020)](https://www.trackmania.com/) and UGC platform [ManiaPlanet](https://www.maniaplanet.com/) for TrackMania² and ShootMania.
+This [VS Code](https://code.visualstudio.com/) extension adds over 200 snippets for ManiaScript, a scripting language used in the racing game [Trackmania (2020)](https://www.trackmania.com/) and the UGC platform [ManiaPlanet](https://www.maniaplanet.com/) for TrackMania² and ShootMania.
 
 ## Features
 
-- Import suggestions for standard namespaces (`MathLib`, `TextLib`, and others) and autocompletion for their methods.
-- Autocompletion for array and struct methods (`existskey`, `fromjson`, etc.)
+- Import suggestions for standard namespaces (`MathLib`, `TextLib`, and others), with autocompletion for their methods.
+- Autocompletion for array and struct methods (`existskey`, `fromjson`, etc.).
 - Quickly scaffold functions, loops, control statements, directives, variable and trait declarations.
 - Insert manialink tags and a basic manialink layer template.
 - Generate common patterns, such as calling `Page.GetFirstChild` or looping over `PendingEvents`.
@@ -20,8 +20,10 @@ An extension providing ManiaScript grammar ([MSLang](https://marketplace.visuals
 
 ## Contributing
 
-If you feel like the snippets can be improved in some way, please create a [pull request](https://github.com/domino54/vscode-maniascript-snippets/pulls) or an [issue](https://github.com/domino54/vscode-maniascript-snippets/issues).
+If you feel the snippets can be improved, please create a [pull request](https://github.com/domino54/vscode-maniascript-snippets/pulls) or an [issue](https://github.com/domino54/vscode-maniascript-snippets/issues).
+
+The snippets are **opinionated** — some things, such as aliases for built-in namespaces (`ML`, `TL`) and the lack of explicit declaration types, are *not* subject to change.
 
 ## Release Notes
 
-Refer to [CHANGELOG](CHANGELOG.md) for release notes.
+Refer to the [CHANGELOG](CHANGELOG.md) for release notes.

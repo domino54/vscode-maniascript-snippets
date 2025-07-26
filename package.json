@@ -1,12 +1,13 @@
 {
   "name": "vscode-maniascript-snippets",
-  "displayName": "ManiaScript Snippets",
+  "displayName": "ManiaScript Snippets Collection",
   "description": "Supercharged set of snippets for ManiaScript development.",
   "icon": "images/logo.png",
   "author": {
     "name": "Dominik Mrajca"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "domino54",
   "repository": {
     "type": "git",
     "url": "https://github.com/domino54/vscode-maniascript-snippets"
